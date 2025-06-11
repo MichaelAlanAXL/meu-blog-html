@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Blog HTML Semântico + Acessibilidade</title>
+	<style>
+		body {
+			background: lightgrey;
+		}
+		.paragrafo p {
+			font-size: 18px;
+		}
+		ol li {
+			margin-top: 12px;
+		}
+		footer {
+			position: relative;
+			bottom: 0;
+			width: 100%;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<!-- início do cabeçalho -->
+	<header id="topo">
+		<h1>Blog primeiros passos com HTML 5</h1>
+		<h3>Pequeno blog utilizando as tags <u><i>HTML-5</i></u>, aprendidas no <u>bootcamp</u> <mark>Santander</mark> e <mark>DIO</mark></h3>
+		<nav>
+			<ul>
+				<li><a href="#blog"> Sobre meu blog</a></li>
+				<li><a href="#exemplos"> Pequenos exemplos:</a></li>
+				<ul>
+					<li><a href="#um">carregar imagem</a></li>
+					<li><a href="#dois">tocar música e vídeo</a></li>
+					<li><a href="#tres">frame do map do google(para lojas)</a></li>
+				</ul>
+				<li><a href="#tabela"> Tabela com as tags explicadas</a></li>
+				<li><a href="#contato"> Entre em contato</a></li>
+			</ul>			
+		</nav>
+		
+	</header>
+	<!-- fim do cabeçalho -->
+
+	<!-- conteudo da página -->
+	<main>
+		<section id="blog">
+			<hr />
+			<div class="paragrafo">
+				<h2>Aqui um pouco de mim e sobre meu blog</h2>
+				<p style="text-indent: 30px;">
+					Olá a todos, meu nome é <b>Michael</b> e esse é o meu <i>blog</i> de estudos em <strong>HTML</strong>. esse <u>bootcamp</u> da <span style="color: red;">Santander</span> na <abbr title="Digital Innovation One">DIO</abbr>, facilita muito. E este é o meu pequeno <i>Web Site</i> para por em prática um pouco que aprendi até agora e seguindo em frente para estilizar meu site com CSS.
+				</p>				
+				<p style="text-indent: 30px;">
+					Nunca imaginei que estudar web designer seria tão desafiador e ao mesmo tempo divertido. os cara do <strong>w3c</strong> pensaram em tudo criando as <mark><b>tags intuitivas</b></mark>.
+					Criando esse pequeno projeto já me sinto programador profissional, demanda um pouco de tempo, mas cada tag no seu lugar tudo se resolve.
+
+						
+				</p>
+			</div>
+		</section>
+
+	<!-- início exemplos -->
+		<section id="exemplos">
+			<hr />
+			<div>
+				<h2> alguns exemplos legais que aprendi</h2>
+				<ol>
+					<li> Exemplo 1:</li>
+					<p id="um">aprendi a carregar uma imagem pro meu site -></p>
+					<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHo1M2VtZW1qd3dlcjc2ZzV4bnQ1aTE3MHB3ZDMzdjl4cnM4cTNzeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jBOOXxSJfG8kqMxT11/giphy.gif" alt="ninjas that fight for justice" width="300px">
+					<li> Exemplo 2:</li>
+					<p id="dois"> Também consigo colocar meu site pra tocar músicas e até videos com legendas</p>
+					<audio controls>
+						<source src="musica1.mp3" />
+						Seu navegador nao tem suporte para áudio .mp3 ou música não carregada
+					</audio>
+					<video controls>
+						<source src="clipe.mp4" />
+						<track kind="captions" src="legenda.vtt" />
+						Seu navegador nao tem suporte para video .mp4 ou video não foi carregado
+
+					</video>
+					<li> Exemplo 3:</li>
+					<p id="tres"> Aprendi como as lojas fazem para mostrar seu endereço dentro de seu site</p>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34847.41224498746!2d-46.390890782539046!3d-23.35625283934407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce88b9e0a911df%3A0x85f2f1689bef6637!2sR.%20Pico%20da%20Neblina%20-%20Morro%20Grande%2C%20Guarulhos%20-%20SP%2C%2007175-590!5e0!3m2!1spt-BR!2sbr!4v1749678147906!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</ol>
+			</div>
+			
+		</section><br />
+	<!-- fim exemplos --> 
+
+	<!-- inicio da tabela -->	
+		<section id="tabela">
+			<table summary="Esta tabela se refere as tags mais comuns em HTML" border="1" style="background-color: white;">
+				<caption> Tabela com as tags HTML explicadas</caption>
+					<thead>
+						<tr>
+							<th title="tag html">tag HTML</th>
+							<th>Exemplo</th>
+							<th>Explicação</th>
+						</tr>					
+					</thead>
+					<tbody>
+						<tr>
+							<td>&lt;h1&gt; a &lt;h6&gt;</code></td>
+							<td><h4>Título com h4</h4></td>
+							<td>tags para títulos &lt;h1&gt; para maior e &lt;h6&gt; para menor</td>
+						</tr>
+						<tr>
+							<td>&lt;p&gt;</td>
+							<td><p>Texto aqui</p></td>
+							<td>Cria um parágrafo de texto</td>
+						</tr>				
+						<tr>
+							<td>&lt;mark&gt;</td>
+							<td><mark>Destaque</mark></td>
+							<td>Destaca com fundo amarelo</td>
+						</tr>
+						<tr>
+							<td>&lt;small&gt;</td>
+							<td><small>Letra pequena</small></td>
+							<td>Mostra o texto ou palavra menor</td>
+						</tr>
+						<tr>
+							<td>&lt;i&gt;</td>
+							<td><i>Itálico</i></td>
+							<td>Deixa o texto em itálico</td>
+						</tr>
+						<tr>
+							<td>&lt;u&gt;</td>
+							<td><u>Sublinhado</u></td>
+							<td>Sublinha o texto</td>
+						</tr>
+						<tr>
+							<td>&lt;strong&gt;</td>
+							<td><strong>Importante</strong></td>
+							<td>Texto negrito e deixa semântico</td>
+						</tr>
+						<tr>
+							<td>&lt;a&gt;</td>
+							<td><a href="#">Link</a></td>
+							<td>Cria um link URL</td>
+						</tr>
+						<tr>
+							<td>&lt;hr&gt;</td>
+							<td><hr /></td>
+							<td>Linha divisória horizontal</td>
+						</tr>
+						<tr>
+							<td>&lt;del&gt;</td>
+							<td><del>texto riscado</del></td>
+							<td>Texto que foi removido</td>
+						</tr>						
+					</tbody>				
+			</table>
+		</section><br /><br />
+	<!-- fim da tabela -->
+
+	<!-- sessão para contato -->
+		<section id="contato">
+			<fieldset>
+				<legend> Entre em contato comigo:</legend>
+				<form name="contact" method="POST" action="#">
+					<label for="name"> Seu Nome:*</label>
+					<input type="text" id="name" required><br /><br />
+
+
+					<label for="email"> Seu E-mail:*</label>
+					<input type="email" for="email" required placeholder="exemplo@gmail.com"><br /><br />
+
+					<label for="genero"> gênero (opcional)</label><br />
+					<input type="radio" id="man" for="genero" name="genero">
+					<label for="man">Homem</label><br />
+					<input type="radio" id="woman" for="genero" name="genero">
+					<label for="woman">Mulher</label><br /><br />
+
+					<!-- selecionar assunto da mensagem -->
+					<label for="subject"> Selecione um assunto:*</label><br />
+					<select id="subject">
+						<option value="doubt"> Dúvida</option>
+						<option value="sugestion"> Sugestão</option>
+						<option value="other"> Outro</option>
+					</select><br /><br />
+
+
+					<label for="message"> Sua mensagem (máximo 140 caracters):</label><br />
+					<textarea rows="4" cols="50" id="message" required>
+						
+					</textarea>
+					<button type="submit">Enviar</button>
+
+				<p> Responderei o mais rápido possível</p>
+				</form>
+			</fieldset>			
+		</section>		
+	</main>
+
+	<!-- início do roda-pé -->
+	<footer>
+		<hr />
+		<div>
+        	<p>&copy; Dev Michael 2022 - 2025 <a href="https://github.com/MichaelAlanAXL" target="_blank"> www.michaelti.com.br</a></p>
+		</div>
+	</footer>
+	<a href="#topo" aria-label="Voltar ao topo da página" style="background-color: grey; position: fixed; bottom: 20px; right: 20px;"> ↑ Voltar ao topo da página ↑</a>
+</body>
+</html>
