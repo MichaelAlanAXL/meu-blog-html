@@ -11,6 +11,9 @@
 		.paragrafo p {
 			font-size: 18px;
 		}
+		ol {
+			width: 	max-content;
+		}
 		ol li {
 			margin-top: 12px;
 		}
@@ -71,18 +74,22 @@
 					<li> Exemplo 1:</li>
 					<p id="um">aprendi a carregar uma imagem pro meu site -></p>
 					<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHo1M2VtZW1qd3dlcjc2ZzV4bnQ1aTE3MHB3ZDMzdjl4cnM4cTNzeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jBOOXxSJfG8kqMxT11/giphy.gif" alt="ninjas that fight for justice" width="300px">
+					<hr>	
 					<li> Exemplo 2:</li>
-					<p id="dois"> Também consigo colocar meu site pra tocar músicas e até videos com legendas</p>
-					<audio controls>
-						<source src="musica1.mp3" />
+					<p id="dois"> Também consigo colocar meu site pra tocar músicas</p>
+					<audio controls autoplay>
+						<source src="src/audios/eona-emotional-ambient-pop.mp3" />
 						Seu navegador nao tem suporte para áudio .mp3 ou música não carregada
 					</audio>
+					<hr>
+					<p> <b>e até videos com legendas</b></p>
 					<video controls>
 						<source src="clipe.mp4" />
 						<track kind="captions" src="legenda.vtt" />
 						Seu navegador nao tem suporte para video .mp4 ou video não foi carregado
 
 					</video>
+					<hr>	
 					<li> Exemplo 3:</li>
 					<p id="tres"> Aprendi como as lojas fazem para mostrar seu endereço dentro de seu site</p>
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34847.41224498746!2d-46.390890782539046!3d-23.35625283934407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce88b9e0a911df%3A0x85f2f1689bef6637!2sR.%20Pico%20da%20Neblina%20-%20Morro%20Grande%2C%20Guarulhos%20-%20SP%2C%2007175-590!5e0!3m2!1spt-BR!2sbr!4v1749678147906!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -187,7 +194,7 @@
 
 
 					<label for="message"> Sua mensagem (máximo 140 caracters):</label><br />
-					<textarea rows="4" cols="50" id="message" required>
+					<textarea rows="4" cols="50" id="message" required maxlength="140">
 						
 					</textarea>
 					<button type="submit">Enviar</button>
